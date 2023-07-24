@@ -34,7 +34,10 @@
                 extend: {
                     colors: {
                         'primary-btn-color': '#B68C5A',
-                    }
+                    },
+                    backgroundImage: {
+                        'hero-bg': "url('./images/banner.png')",
+                    },
                 }
             }
         }
@@ -47,8 +50,8 @@
 <body>
     <!-- header sectoin -->
     <header class="max-w-screen-xl mx-auto">
-<!-- navbar section start -->
-        <nav class="navbar bg-base-100">
+        <!-- navbar section start -->
+        <nav class="my-10 navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -84,15 +87,27 @@
                 <a class="btn font-poppins bg-primary-btn-color text-white">Free Consultation</a>
             </div>
         </nav>
-<!-- navbar section end -->
+        <!-- navbar section end -->
 
-<!-- banner section start -->
+        <!-- banner section start -->
         <section>
-            
-        </section>
-<!-- banner section end -->
+            <div class="bg-hero-bg hero min-h-[calc(100vh-15px)]">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="lg:max-w-xl">
+                        <h1 class="mb-5 text-5xl font-bold font-garamond">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 
+                        <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs mr-4" />
+                        <button class="btn bg-primary-btn-color text-white">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- banner section end -->
     </header>
+    
     <main>
 
     </main>
